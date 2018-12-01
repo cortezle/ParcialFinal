@@ -8,5 +8,4 @@ router.get('/', function(req, res, next) {
 
 router.post('/',CarController.store);
   
-  module.exports = router;
-  
+module.exports = router;

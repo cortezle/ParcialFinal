@@ -5,9 +5,5 @@ document.form.crud = addEventListener("submit",function(e){
         modelo: document.querySelector('#modelo'),
         anio: document.querySelector('#anio')
     }
-
-
-    var carros= (
-        
-    );
+    console.log("im hrer");
 });
