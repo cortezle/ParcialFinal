@@ -1,10 +1,10 @@
 var mongoose = require('mongoose');
-mongoose.Schema;
+var Schema = mongoose.Schema;
 
-var CarroSchema = {
+var CarroSchema = new Schema({
     marca: String,
     modelo: String,
     anio : Number
-};
+});
 
 module.exports = mongoose.model('filtros',CarroSchema)

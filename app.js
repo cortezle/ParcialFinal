@@ -3,9 +3,15 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+///var mongoose = require('mongoose');
+//mongoose.connect('mongodb://localhost/parcialfinal');
+
+var carRouter = require('./routes/car');
+
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+var carRouter = require('./routes/car');
 
 var app = express();
 
