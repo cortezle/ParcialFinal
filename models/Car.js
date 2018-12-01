@@ -7,4 +7,4 @@ var CarroSchema = new Schema({
     anio : Number
 });
 
-module.exports = mongoose.model('filtros',CarroSchema)
+module.exports = mongoose.model('Carros',CarroSchema)

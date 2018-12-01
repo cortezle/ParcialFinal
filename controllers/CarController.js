@@ -4,6 +4,16 @@ var mongoose = require('mongoose');
 //aqui deifiniremos el crud de la pagina
  
 var CarController ={};
+
+CarController.index = async function(req,res,next){
+    var cars = await cars.find();
+    try {
+        return res.status(200).json({message:"exito"});
+    } catch (error) {
+        return res.status(500).json({error: error});   
+    }
+}
+
  CarController.store = async function(req,res,next){
     var f = new Car();
     f.marca = req.body.marca;
